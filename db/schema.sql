@@ -1,0 +1,7 @@
+CREATE TABLE users (
+  userId INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL,
+  type ENUM('admin', 'user') DEFAULT 'user',
+  active BOOLEAN DEFAULT TRUE
+);

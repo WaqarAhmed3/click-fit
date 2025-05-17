@@ -1,0 +1,271 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ====== Navigation bar Section ====== */
+.transparent-navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease;
+  z-index: 1030;
+}
+
+.transparent-navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .fas {
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: #0ff;
+  border-bottom: 2px solid #0ff;
+  padding-bottom: 3px;
+}
+
+/* ====== Hero Section ====== */
+.hero {
+  background: url("assets/hero.jpg") no-repeat center center/cover;
+  color: white;
+  position: relative;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.animate-title {
+  animation: fadeInDown 1s ease-out;
+}
+
+.animate-sub {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.animate-btn {
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ====== Fitness Fact Section ====== */
+.fact-card {
+  min-height: 120px;
+  background-color: rgba(0, 255, 255, 0.05);
+  border: 1px dashed #0ff;
+  color: #0ff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+.fact-card h4 {
+  font-weight: bold;
+  color: #0ff;
+  margin-bottom: 0.5rem;
+}
+
+.fact-card p {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* ====== Program Cards ====== */
+.program-card {
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.program-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.08);
+}
+
+/* Upload Image Section */
+.dropzone-area {
+  border: 2px dashed #0ff;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  min-height: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropzone-area.dragover {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+.preview-grid-wrapper {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px dashed #0ff;
+  min-height: 200px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#previewContainer img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #0ff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #0ff;
+  transition: transform 0.3s;
+}
+
+#previewMessage {
+  color: #ccc;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.preview-thumbnail-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem;
+}
+
+.preview-thumbnail-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-image {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: #fff;
+  background: rgba(255, 0, 0, 0.7);
+  padding: 2px 6px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+/* ====== Trainer ====== */
+.trainer-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid white;
+  transition: transform 0.3s;
+}
+
+.trainer-img:hover {
+  transform: scale(1.1);
+}
+
+/* ====== Button Glow CTA ====== */
+.btn-glow {
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-glow:hover {
+  background: #0ff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #0ff;
+}
+
+/* Footer Social Icons */
+.social-icons i {
+  margin: 0 10px;
+  transition: transform 0.3s;
+  font-size: 1.5rem;
+}
+
+.social-icons i:hover {
+  transform: rotate(10deg) scale(1.2);
+  color: #0ff;
+}
+
+/* ====== Responsive tweaks ====== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
