@@ -6,7 +6,7 @@ Welcome to **Click Fit**, a one-page responsive sports and fitness website devel
 
 ## 🖼️ Screenshot
 
-![Click Fit Screenshot](public/assets/screenshot.png)
+![Click Fit Screenshot](public/assets/screenshot.jpg)
 
 ## 🚀 Project Overview
 
