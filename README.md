@@ -4,6 +4,10 @@ Welcome to **Click Fit**, a one-page responsive sports and fitness website devel
 
 ---
 
+## 🖼️ Screenshot
+
+![Click Fit Screenshot](public/assets/screenshot.png)
+
 ## 🚀 Project Overview
 
 **Click Fit** is a visually engaging, responsive sports-themed web application built using:
@@ -65,4 +69,4 @@ click-fit/
    node server.js
    ```
 
-4. **Open Browser with http://localhost:3000**
+4. **Open browser at** [http://localhost:3000](http://localhost:3000)
